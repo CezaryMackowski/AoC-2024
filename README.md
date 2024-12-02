@@ -7,11 +7,11 @@ Inputs directory contains **my** inputs. Yours will be different.
 ## How to run
 
 ```shell
-# use makefile
+# run tests locally
 make test-local
 
 # OR
 
-# use docker containers
+# run tests in docker containers
 make docker
 ```
