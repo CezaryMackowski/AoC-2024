@@ -8,7 +8,7 @@ import (
 	"testing"
 )
 
-func getLists(filename string) [][]int {
+func getInput(filename string) [][]int {
 	f, err := os.Open(filename)
 	if err != nil {
 		return nil
@@ -37,7 +37,7 @@ func getLists(filename string) [][]int {
 }
 
 func TestDay2(t *testing.T) {
-	reports := getLists("../inputs/day_2.txt")
+	reports := getInput("../inputs/day_2.txt")
 
 	var tests = []struct {
 		reports        [][]int
@@ -66,7 +66,7 @@ func TestDay2(t *testing.T) {
 }
 
 func TestDay2Extra(t *testing.T) {
-	reports := getLists("../inputs/day_2_extra.txt")
+	reports := getInput("../inputs/day_2_extra.txt")
 
 	var tests = []struct {
 		reports        [][]int
